@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.MainPage">
+
+    <StackLayout>
+        <Label x:Name="lbl_principal"
+               Text="Llene datos del formulario:"
+               FontSize="Medium"/>
+        <Frame>
+            <StackLayout>
+                <Label x:Name="nombre"
+                       Text="Ingrese su nombre:"
+                       FontSize="Medium"/>
+                <Entry x:Name="lbl_nombre"
+                       FontSize="Medium"/>
+
+                
+                <Label x:Name="lbl_naciminto"
+                       Text="Ingrese su fecha de nacimiento"
+                       FontSize="Medium"/>
+                <DatePicker x:Name="myDatePicker"  />
+
+
+                <Label x:Name="ocupacion"
+                       Text="Ingrese su ocupacion:"
+                       FontSize="Medium"/>
+                <Entry x:Name="lbl_ocupacion"
+                       FontSize="Medium"/>
+
+
+                <Label x:Name="correo"
+                       Text="Ingrese su correo:"
+                       FontSize="Medium"/>
+                <Entry x:Name="lbl_correo"
+                       FontSize="Medium"/>
+
+
+                <Label x:Name="nacionalidad"
+                       Text="Ingrese su nacionalidad:"
+                       FontSize="Medium"/>
+                <Entry x:Name="lbl_nacionalidad"
+                       FontSize="Medium"/>
+
+
+                <Label x:Name="ingles"
+                       Text="Ingrese su nivel de ingles:"
+                       FontSize="Medium"/>
+                <Picker x:Name="lbl_ingles">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>básico</x:String>
+                            <x:String>intermedio</x:String>
+                            <x:String>avanzado</x:String>
+                            <x:String>fluido</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+
+
+
+                <Label x:Name="lenguajes"
+                       Text="Ingrese lenguajes de programacion:"
+                       FontSize="Medium"/>
+                <Picker x:Name="lbl_lenguajes">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>C++</x:String>
+                            <x:String>Python</x:String>
+                            <x:String>Java</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+
+
+                <Label x:Name="aptitudes"
+                       Text="Ingrese sus Aptitudes:"
+                       FontSize="Medium"/>
+                <Entry x:Name="lbl_aptitudes"
+                       FontSize="Medium"/>
+
+
+                <Label x:Name="habilidades"
+                       Text="Ingrese sus Habilidades:"
+                       FontSize="Medium"/>
+                <Entry x:Name="lbl_habilidades"
+                       Placeholder="Ingrese sus Habilidades"
+                       FontSize="Medium"/>
+
+
+                <Label x:Name="Idiomas"
+                       Text="Ingrese idiomas que hablas:"
+                       FontSize="Medium"/>
+
+                <Picker x:Name="optionsPicker"
+                    Title="Seleccionar opciones"
+                    >
+                <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Opción 1</x:String>
+                            <x:String>Opción 2</x:String>
+                            <x:String>Opción 3</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+
+</ContentPage>
